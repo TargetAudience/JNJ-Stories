@@ -26,6 +26,7 @@ struct VideoSource {
         self.isNetwork = json["isNetwork"] as? Bool ?? false
         self.isAsset = json["isAsset"] as? Bool ?? false
         self.shouldCache = json["shouldCache"] as? Bool ?? false
-        self.requestHeaders = json["requestHeaders"] as? Dictionary<String,Any>
+        self.requestHeaders = json["requestHeaders"] as? Dictionary<String,Any> 
+        
     }
 }
