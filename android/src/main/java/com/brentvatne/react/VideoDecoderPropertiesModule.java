@@ -103,5 +103,844 @@ public class VideoDecoderPropertiesModule extends ReactContextBaseJavaModule {
         super(reactContext);
         this.reactContext = reactContext;
     }
+        @SuppressLint("ObsoleteSdkInt")
+    @ReactMethod
+    public void isCodecSupported(String mimeType, int width, int height, Promise p) {
+        if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.LOLLIPOP) {
+            p.resolve(false);
+            return;
+        }
+        MediaCodecList mRegularCodecs = new MediaCodecList(MediaCodecList.REGULAR_CODECS);
+        MediaFormat format = MediaFormat.createVideoFormat(mimeType, width, height);
+        String codecName = mRegularCodecs.findDecoderForFormat(format);
+        if (codecName == null) {
+            p.resolve(false);
+        } else {
+            p.resolve(true);
+        }
+    }
+
+
+    @ReactMethod
+    public void isHEVCSupported(Promise p) {
+        isCodecSupported("video/hevc", 1920, 1080, p);
+    }
+
+    public VideoDecoderPropertiesModule(ReactApplicationContext reactContext) {
+        super(reactContext);
+        this.reactContext = reactContext;
+    }
+        @SuppressLint("ObsoleteSdkInt")
+    @ReactMethod
+    public void isCodecSupported(String mimeType, int width, int height, Promise p) {
+        if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.LOLLIPOP) {
+            p.resolve(false);
+            return;
+        }
+        MediaCodecList mRegularCodecs = new MediaCodecList(MediaCodecList.REGULAR_CODECS);
+        MediaFormat format = MediaFormat.createVideoFormat(mimeType, width, height);
+        String codecName = mRegularCodecs.findDecoderForFormat(format);
+        if (codecName == null) {
+            p.resolve(false);
+        } else {
+            p.resolve(true);
+        }
+    }
+
+
+    @ReactMethod
+    public void isHEVCSupported(Promise p) {
+        isCodecSupported("video/hevc", 1920, 1080, p);
+    }
+
+    public VideoDecoderPropertiesModule(ReactApplicationContext reactContext) {
+        super(reactContext);
+        this.reactContext = reactContext;
+    }
+        @SuppressLint("ObsoleteSdkInt")
+    @ReactMethod
+    public void isCodecSupported(String mimeType, int width, int height, Promise p) {
+        if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.LOLLIPOP) {
+            p.resolve(false);
+            return;
+        }
+        MediaCodecList mRegularCodecs = new MediaCodecList(MediaCodecList.REGULAR_CODECS);
+        MediaFormat format = MediaFormat.createVideoFormat(mimeType, width, height);
+        String codecName = mRegularCodecs.findDecoderForFormat(format);
+        if (codecName == null) {
+            p.resolve(false);
+        } else {
+            p.resolve(true);
+        }
+    }
+
+
+    @ReactMethod
+    public void isHEVCSupported(Promise p) {
+        isCodecSupported("video/hevc", 1920, 1080, p);
+    }
+
+    public VideoDecoderPropertiesModule(ReactApplicationContext reactContext) {
+        super(reactContext);
+        this.reactContext = reactContext;
+    }
+        @SuppressLint("ObsoleteSdkInt")
+    @ReactMethod
+    public void isCodecSupported(String mimeType, int width, int height, Promise p) {
+        if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.LOLLIPOP) {
+            p.resolve(false);
+            return;
+        }
+        MediaCodecList mRegularCodecs = new MediaCodecList(MediaCodecList.REGULAR_CODECS);
+        MediaFormat format = MediaFormat.createVideoFormat(mimeType, width, height);
+        String codecName = mRegularCodecs.findDecoderForFormat(format);
+        if (codecName == null) {
+            p.resolve(false);
+        } else {
+            p.resolve(true);
+        }
+    }
+
+
+    @ReactMethod
+    public void isHEVCSupported(Promise p) {
+        isCodecSupported("video/hevc", 1920, 1080, p);
+    }
+
+    public VideoDecoderPropertiesModule(ReactApplicationContext reactContext) {
+        super(reactContext);
+        this.reactContext = reactContext;
+    }
+        @SuppressLint("ObsoleteSdkInt")
+    @ReactMethod
+    public void isCodecSupported(String mimeType, int width, int height, Promise p) {
+        if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.LOLLIPOP) {
+            p.resolve(false);
+            return;
+        }
+        MediaCodecList mRegularCodecs = new MediaCodecList(MediaCodecList.REGULAR_CODECS);
+        MediaFormat format = MediaFormat.createVideoFormat(mimeType, width, height);
+        String codecName = mRegularCodecs.findDecoderForFormat(format);
+        if (codecName == null) {
+            p.resolve(false);
+        } else {
+            p.resolve(true);
+        }
+    }
+
+
+    @ReactMethod
+    public void isHEVCSupported(Promise p) {
+        isCodecSupported("video/hevc", 1920, 1080, p);
+    }
+
+    public VideoDecoderPropertiesModule(ReactApplicationContext reactContext) {
+        super(reactContext);
+        this.reactContext = reactContext;
+    }
+        @SuppressLint("ObsoleteSdkInt")
+    @ReactMethod
+    public void isCodecSupported(String mimeType, int width, int height, Promise p) {
+        if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.LOLLIPOP) {
+            p.resolve(false);
+            return;
+        }
+        MediaCodecList mRegularCodecs = new MediaCodecList(MediaCodecList.REGULAR_CODECS);
+        MediaFormat format = MediaFormat.createVideoFormat(mimeType, width, height);
+        String codecName = mRegularCodecs.findDecoderForFormat(format);
+        if (codecName == null) {
+            p.resolve(false);
+        } else {
+            p.resolve(true);
+        }
+    }
+
+
+    @ReactMethod
+    public void isHEVCSupported(Promise p) {
+        isCodecSupported("video/hevc", 1920, 1080, p);
+    }
+
+    public VideoDecoderPropertiesModule(ReactApplicationContext reactContext) {
+        super(reactContext);
+        this.reactContext = reactContext;
+    }
+        @SuppressLint("ObsoleteSdkInt")
+    @ReactMethod
+    public void isCodecSupported(String mimeType, int width, int height, Promise p) {
+        if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.LOLLIPOP) {
+            p.resolve(false);
+            return;
+        }
+        MediaCodecList mRegularCodecs = new MediaCodecList(MediaCodecList.REGULAR_CODECS);
+        MediaFormat format = MediaFormat.createVideoFormat(mimeType, width, height);
+        String codecName = mRegularCodecs.findDecoderForFormat(format);
+        if (codecName == null) {
+            p.resolve(false);
+        } else {
+            p.resolve(true);
+        }
+    }
+
+
+    @ReactMethod
+    public void isHEVCSupported(Promise p) {
+        isCodecSupported("video/hevc", 1920, 1080, p);
+    }
+
+    public VideoDecoderPropertiesModule(ReactApplicationContext reactContext) {
+        super(reactContext);
+        this.reactContext = reactContext;
+    }
+        @SuppressLint("ObsoleteSdkInt")
+    @ReactMethod
+    public void isCodecSupported(String mimeType, int width, int height, Promise p) {
+        if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.LOLLIPOP) {
+            p.resolve(false);
+            return;
+        }
+        MediaCodecList mRegularCodecs = new MediaCodecList(MediaCodecList.REGULAR_CODECS);
+        MediaFormat format = MediaFormat.createVideoFormat(mimeType, width, height);
+        String codecName = mRegularCodecs.findDecoderForFormat(format);
+        if (codecName == null) {
+            p.resolve(false);
+        } else {
+            p.resolve(true);
+        }
+    }
+
+
+    @ReactMethod
+    public void isHEVCSupported(Promise p) {
+        isCodecSupported("video/hevc", 1920, 1080, p);
+    }
+
+    public VideoDecoderPropertiesModule(ReactApplicationContext reactContext) {
+        super(reactContext);
+        this.reactContext = reactContext;
+    }
+        @SuppressLint("ObsoleteSdkInt")
+    @ReactMethod
+    public void isCodecSupported(String mimeType, int width, int height, Promise p) {
+        if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.LOLLIPOP) {
+            p.resolve(false);
+            return;
+        }
+        MediaCodecList mRegularCodecs = new MediaCodecList(MediaCodecList.REGULAR_CODECS);
+        MediaFormat format = MediaFormat.createVideoFormat(mimeType, width, height);
+        String codecName = mRegularCodecs.findDecoderForFormat(format);
+        if (codecName == null) {
+            p.resolve(false);
+        } else {
+            p.resolve(true);
+        }
+    }
+
+
+    @ReactMethod
+    public void isHEVCSupported(Promise p) {
+        isCodecSupported("video/hevc", 1920, 1080, p);
+    }
+
+    public VideoDecoderPropertiesModule(ReactApplicationContext reactContext) {
+        super(reactContext);
+        this.reactContext = reactContext;
+    }
+        @SuppressLint("ObsoleteSdkInt")
+    @ReactMethod
+    public void isCodecSupported(String mimeType, int width, int height, Promise p) {
+        if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.LOLLIPOP) {
+            p.resolve(false);
+            return;
+        }
+        MediaCodecList mRegularCodecs = new MediaCodecList(MediaCodecList.REGULAR_CODECS);
+        MediaFormat format = MediaFormat.createVideoFormat(mimeType, width, height);
+        String codecName = mRegularCodecs.findDecoderForFormat(format);
+        if (codecName == null) {
+            p.resolve(false);
+        } else {
+            p.resolve(true);
+        }
+    }
+
+
+    @ReactMethod
+    public void isHEVCSupported(Promise p) {
+        isCodecSupported("video/hevc", 1920, 1080, p);
+    }
+
+    public VideoDecoderPropertiesModule(ReactApplicationContext reactContext) {
+        super(reactContext);
+        this.reactContext = reactContext;
+    }
+        @SuppressLint("ObsoleteSdkInt")
+    @ReactMethod
+    public void isCodecSupported(String mimeType, int width, int height, Promise p) {
+        if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.LOLLIPOP) {
+            p.resolve(false);
+            return;
+        }
+        MediaCodecList mRegularCodecs = new MediaCodecList(MediaCodecList.REGULAR_CODECS);
+        MediaFormat format = MediaFormat.createVideoFormat(mimeType, width, height);
+        String codecName = mRegularCodecs.findDecoderForFormat(format);
+        if (codecName == null) {
+            p.resolve(false);
+        } else {
+            p.resolve(true);
+        }
+    }
+
+
+    @ReactMethod
+    public void isHEVCSupported(Promise p) {
+        isCodecSupported("video/hevc", 1920, 1080, p);
+    }
+
+    public VideoDecoderPropertiesModule(ReactApplicationContext reactContext) {
+        super(reactContext);
+        this.reactContext = reactContext;
+    }
+        @SuppressLint("ObsoleteSdkInt")
+    @ReactMethod
+    public void isCodecSupported(String mimeType, int width, int height, Promise p) {
+        if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.LOLLIPOP) {
+            p.resolve(false);
+            return;
+        }
+        MediaCodecList mRegularCodecs = new MediaCodecList(MediaCodecList.REGULAR_CODECS);
+        MediaFormat format = MediaFormat.createVideoFormat(mimeType, width, height);
+        String codecName = mRegularCodecs.findDecoderForFormat(format);
+        if (codecName == null) {
+            p.resolve(false);
+        } else {
+            p.resolve(true);
+        }
+    }
+
+
+    @ReactMethod
+    public void isHEVCSupported(Promise p) {
+        isCodecSupported("video/hevc", 1920, 1080, p);
+    }
+
+    public VideoDecoderPropertiesModule(ReactApplicationContext reactContext) {
+        super(reactContext);
+        this.reactContext = reactContext;
+    }
+        @SuppressLint("ObsoleteSdkInt")
+    @ReactMethod
+    public void isCodecSupported(String mimeType, int width, int height, Promise p) {
+        if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.LOLLIPOP) {
+            p.resolve(false);
+            return;
+        }
+        MediaCodecList mRegularCodecs = new MediaCodecList(MediaCodecList.REGULAR_CODECS);
+        MediaFormat format = MediaFormat.createVideoFormat(mimeType, width, height);
+        String codecName = mRegularCodecs.findDecoderForFormat(format);
+        if (codecName == null) {
+            p.resolve(false);
+        } else {
+            p.resolve(true);
+        }
+    }
+
+
+    @ReactMethod
+    public void isHEVCSupported(Promise p) {
+        isCodecSupported("video/hevc", 1920, 1080, p);
+    }
+
+    public VideoDecoderPropertiesModule(ReactApplicationContext reactContext) {
+        super(reactContext);
+        this.reactContext = reactContext;
+    }
+        @SuppressLint("ObsoleteSdkInt")
+    @ReactMethod
+    public void isCodecSupported(String mimeType, int width, int height, Promise p) {
+        if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.LOLLIPOP) {
+            p.resolve(false);
+            return;
+        }
+        MediaCodecList mRegularCodecs = new MediaCodecList(MediaCodecList.REGULAR_CODECS);
+        MediaFormat format = MediaFormat.createVideoFormat(mimeType, width, height);
+        String codecName = mRegularCodecs.findDecoderForFormat(format);
+        if (codecName == null) {
+            p.resolve(false);
+        } else {
+            p.resolve(true);
+        }
+    }
+
+
+    @ReactMethod
+    public void isHEVCSupported(Promise p) {
+        isCodecSupported("video/hevc", 1920, 1080, p);
+    }
+
+    public VideoDecoderPropertiesModule(ReactApplicationContext reactContext) {
+        super(reactContext);
+        this.reactContext = reactContext;
+    }
+        @SuppressLint("ObsoleteSdkInt")
+    @ReactMethod
+    public void isCodecSupported(String mimeType, int width, int height, Promise p) {
+        if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.LOLLIPOP) {
+            p.resolve(false);
+            return;
+        }
+        MediaCodecList mRegularCodecs = new MediaCodecList(MediaCodecList.REGULAR_CODECS);
+        MediaFormat format = MediaFormat.createVideoFormat(mimeType, width, height);
+        String codecName = mRegularCodecs.findDecoderForFormat(format);
+        if (codecName == null) {
+            p.resolve(false);
+        } else {
+            p.resolve(true);
+        }
+    }
+
+
+    @ReactMethod
+    public void isHEVCSupported(Promise p) {
+        isCodecSupported("video/hevc", 1920, 1080, p);
+    }
+
+    public VideoDecoderPropertiesModule(ReactApplicationContext reactContext) {
+        super(reactContext);
+        this.reactContext = reactContext;
+    }
+        @SuppressLint("ObsoleteSdkInt")
+    @ReactMethod
+    public void isCodecSupported(String mimeType, int width, int height, Promise p) {
+        if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.LOLLIPOP) {
+            p.resolve(false);
+            return;
+        }
+        MediaCodecList mRegularCodecs = new MediaCodecList(MediaCodecList.REGULAR_CODECS);
+        MediaFormat format = MediaFormat.createVideoFormat(mimeType, width, height);
+        String codecName = mRegularCodecs.findDecoderForFormat(format);
+        if (codecName == null) {
+            p.resolve(false);
+        } else {
+            p.resolve(true);
+        }
+    }
+
+
+    @ReactMethod
+    public void isHEVCSupported(Promise p) {
+        isCodecSupported("video/hevc", 1920, 1080, p);
+    }
+
+    public VideoDecoderPropertiesModule(ReactApplicationContext reactContext) {
+        super(reactContext);
+        this.reactContext = reactContext;
+    }
+        @SuppressLint("ObsoleteSdkInt")
+    @ReactMethod
+    public void isCodecSupported(String mimeType, int width, int height, Promise p) {
+        if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.LOLLIPOP) {
+            p.resolve(false);
+            return;
+        }
+        MediaCodecList mRegularCodecs = new MediaCodecList(MediaCodecList.REGULAR_CODECS);
+        MediaFormat format = MediaFormat.createVideoFormat(mimeType, width, height);
+        String codecName = mRegularCodecs.findDecoderForFormat(format);
+        if (codecName == null) {
+            p.resolve(false);
+        } else {
+            p.resolve(true);
+        }
+    }
+
+
+    @ReactMethod
+    public void isHEVCSupported(Promise p) {
+        isCodecSupported("video/hevc", 1920, 1080, p);
+    }
+
+    public VideoDecoderPropertiesModule(ReactApplicationContext reactContext) {
+        super(reactContext);
+        this.reactContext = reactContext;
+    }
+        @SuppressLint("ObsoleteSdkInt")
+    @ReactMethod
+    public void isCodecSupported(String mimeType, int width, int height, Promise p) {
+        if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.LOLLIPOP) {
+            p.resolve(false);
+            return;
+        }
+        MediaCodecList mRegularCodecs = new MediaCodecList(MediaCodecList.REGULAR_CODECS);
+        MediaFormat format = MediaFormat.createVideoFormat(mimeType, width, height);
+        String codecName = mRegularCodecs.findDecoderForFormat(format);
+        if (codecName == null) {
+            p.resolve(false);
+        } else {
+            p.resolve(true);
+        }
+    }
+
+
+    @ReactMethod
+    public void isHEVCSupported(Promise p) {
+        isCodecSupported("video/hevc", 1920, 1080, p);
+    }
+
+    public VideoDecoderPropertiesModule(ReactApplicationContext reactContext) {
+        super(reactContext);
+        this.reactContext = reactContext;
+    }
+        @SuppressLint("ObsoleteSdkInt")
+    @ReactMethod
+    public void isCodecSupported(String mimeType, int width, int height, Promise p) {
+        if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.LOLLIPOP) {
+            p.resolve(false);
+            return;
+        }
+        MediaCodecList mRegularCodecs = new MediaCodecList(MediaCodecList.REGULAR_CODECS);
+        MediaFormat format = MediaFormat.createVideoFormat(mimeType, width, height);
+        String codecName = mRegularCodecs.findDecoderForFormat(format);
+        if (codecName == null) {
+            p.resolve(false);
+        } else {
+            p.resolve(true);
+        }
+    }
+
+
+    @ReactMethod
+    public void isHEVCSupported(Promise p) {
+        isCodecSupported("video/hevc", 1920, 1080, p);
+    }
+
+    public VideoDecoderPropertiesModule(ReactApplicationContext reactContext) {
+        super(reactContext);
+        this.reactContext = reactContext;
+    }
+        @SuppressLint("ObsoleteSdkInt")
+    @ReactMethod
+    public void isCodecSupported(String mimeType, int width, int height, Promise p) {
+        if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.LOLLIPOP) {
+            p.resolve(false);
+            return;
+        }
+        MediaCodecList mRegularCodecs = new MediaCodecList(MediaCodecList.REGULAR_CODECS);
+        MediaFormat format = MediaFormat.createVideoFormat(mimeType, width, height);
+        String codecName = mRegularCodecs.findDecoderForFormat(format);
+        if (codecName == null) {
+            p.resolve(false);
+        } else {
+            p.resolve(true);
+        }
+    }
+
+
+    @ReactMethod
+    public void isHEVCSupported(Promise p) {
+        isCodecSupported("video/hevc", 1920, 1080, p);
+    }
+
+    public VideoDecoderPropertiesModule(ReactApplicationContext reactContext) {
+        super(reactContext);
+        this.reactContext = reactContext;
+    }
+        @SuppressLint("ObsoleteSdkInt")
+    @ReactMethod
+    public void isCodecSupported(String mimeType, int width, int height, Promise p) {
+        if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.LOLLIPOP) {
+            p.resolve(false);
+            return;
+        }
+        MediaCodecList mRegularCodecs = new MediaCodecList(MediaCodecList.REGULAR_CODECS);
+        MediaFormat format = MediaFormat.createVideoFormat(mimeType, width, height);
+        String codecName = mRegularCodecs.findDecoderForFormat(format);
+        if (codecName == null) {
+            p.resolve(false);
+        } else {
+            p.resolve(true);
+        }
+    }
+
+
+    @ReactMethod
+    public void isHEVCSupported(Promise p) {
+        isCodecSupported("video/hevc", 1920, 1080, p);
+    }
+
+    public VideoDecoderPropertiesModule(ReactApplicationContext reactContext) {
+        super(reactContext);
+        this.reactContext = reactContext;
+    }
+        @SuppressLint("ObsoleteSdkInt")
+    @ReactMethod
+    public void isCodecSupported(String mimeType, int width, int height, Promise p) {
+        if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.LOLLIPOP) {
+            p.resolve(false);
+            return;
+        }
+        MediaCodecList mRegularCodecs = new MediaCodecList(MediaCodecList.REGULAR_CODECS);
+        MediaFormat format = MediaFormat.createVideoFormat(mimeType, width, height);
+        String codecName = mRegularCodecs.findDecoderForFormat(format);
+        if (codecName == null) {
+            p.resolve(false);
+        } else {
+            p.resolve(true);
+        }
+    }
+
+
+    @ReactMethod
+    public void isHEVCSupported(Promise p) {
+        isCodecSupported("video/hevc", 1920, 1080, p);
+    }
+
+    public VideoDecoderPropertiesModule(ReactApplicationContext reactContext) {
+        super(reactContext);
+        this.reactContext = reactContext;
+    }
+    
+        @SuppressLint("ObsoleteSdkInt")
+    @ReactMethod
+    public void isCodecSupported(String mimeType, int width, int height, Promise p) {
+        if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.LOLLIPOP) {
+            p.resolve(false);
+            return;
+        }
+        MediaCodecList mRegularCodecs = new MediaCodecList(MediaCodecList.REGULAR_CODECS);
+        MediaFormat format = MediaFormat.createVideoFormat(mimeType, width, height);
+        String codecName = mRegularCodecs.findDecoderForFormat(format);
+        if (codecName == null) {
+            p.resolve(false);
+        } else {
+            p.resolve(true);
+        }
+    }
+
+
+    @ReactMethod
+    public void isHEVCSupported(Promise p) {
+        isCodecSupported("video/hevc", 1920, 1080, p);
+    }
+
+    public VideoDecoderPropertiesModule(ReactApplicationContext reactContext) {
+        super(reactContext);
+        this.reactContext = reactContext;
+    }
+        @SuppressLint("ObsoleteSdkInt")
+    @ReactMethod
+    public void isCodecSupported(String mimeType, int width, int height, Promise p) {
+        if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.LOLLIPOP) {
+            p.resolve(false);
+            return;
+        }
+        MediaCodecList mRegularCodecs = new MediaCodecList(MediaCodecList.REGULAR_CODECS);
+        MediaFormat format = MediaFormat.createVideoFormat(mimeType, width, height);
+        String codecName = mRegularCodecs.findDecoderForFormat(format);
+        if (codecName == null) {
+            p.resolve(false);
+        } else {
+            p.resolve(true);
+        }
+    }
+
+
+    @ReactMethod
+    public void isHEVCSupported(Promise p) {
+        isCodecSupported("video/hevc", 1920, 1080, p);
+    }
+
+    public VideoDecoderPropertiesModule(ReactApplicationContext reactContext) {
+        super(reactContext);
+        this.reactContext = reactContext;
+    }
+        @SuppressLint("ObsoleteSdkInt")
+    @ReactMethod
+    public void isCodecSupported(String mimeType, int width, int height, Promise p) {
+        if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.LOLLIPOP) {
+            p.resolve(false);
+            return;
+        }
+        MediaCodecList mRegularCodecs = new MediaCodecList(MediaCodecList.REGULAR_CODECS);
+        MediaFormat format = MediaFormat.createVideoFormat(mimeType, width, height);
+        String codecName = mRegularCodecs.findDecoderForFormat(format);
+        if (codecName == null) {
+            p.resolve(false);
+        } else {
+            p.resolve(true);
+        }
+    }
+
+
+    @ReactMethod
+    public void isHEVCSupported(Promise p) {
+        isCodecSupported("video/hevc", 1920, 1080, p);
+    }
+
+    public VideoDecoderPropertiesModule(ReactApplicationContext reactContext) {
+        super(reactContext);
+        this.reactContext = reactContext;
+    }
+        @SuppressLint("ObsoleteSdkInt")
+    @ReactMethod
+    public void isCodecSupported(String mimeType, int width, int height, Promise p) {
+        if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.LOLLIPOP) {
+            p.resolve(false);
+            return;
+        }
+        MediaCodecList mRegularCodecs = new MediaCodecList(MediaCodecList.REGULAR_CODECS);
+        MediaFormat format = MediaFormat.createVideoFormat(mimeType, width, height);
+        String codecName = mRegularCodecs.findDecoderForFormat(format);
+        if (codecName == null) {
+            p.resolve(false);
+        } else {
+            p.resolve(true);
+        }
+    }
+
+
+    @ReactMethod
+    public void isHEVCSupported(Promise p) {
+        isCodecSupported("video/hevc", 1920, 1080, p);
+    }
+
+    public VideoDecoderPropertiesModule(ReactApplicationContext reactContext) {
+        super(reactContext);
+        this.reactContext = reactContext;
+    }
+        @SuppressLint("ObsoleteSdkInt")
+    @ReactMethod
+    public void isCodecSupported(String mimeType, int width, int height, Promise p) {
+        if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.LOLLIPOP) {
+            p.resolve(false);
+            return;
+        }
+        MediaCodecList mRegularCodecs = new MediaCodecList(MediaCodecList.REGULAR_CODECS);
+        MediaFormat format = MediaFormat.createVideoFormat(mimeType, width, height);
+        String codecName = mRegularCodecs.findDecoderForFormat(format);
+        if (codecName == null) {
+            p.resolve(false);
+        } else {
+            p.resolve(true);
+        }
+    }
+
+
+    @ReactMethod
+    public void isHEVCSupported(Promise p) {
+        isCodecSupported("video/hevc", 1920, 1080, p);
+    }
+
+    public VideoDecoderPropertiesModule(ReactApplicationContext reactContext) {
+        super(reactContext);
+        this.reactContext = reactContext;
+    }
+        @SuppressLint("ObsoleteSdkInt")
+    @ReactMethod
+    public void isCodecSupported(String mimeType, int width, int height, Promise p) {
+        if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.LOLLIPOP) {
+            p.resolve(false);
+            return;
+        }
+        MediaCodecList mRegularCodecs = new MediaCodecList(MediaCodecList.REGULAR_CODECS);
+        MediaFormat format = MediaFormat.createVideoFormat(mimeType, width, height);
+        String codecName = mRegularCodecs.findDecoderForFormat(format);
+        if (codecName == null) {
+            p.resolve(false);
+        } else {
+            p.resolve(true);
+        }
+    }
+
+
+    @ReactMethod
+    public void isHEVCSupported(Promise p) {
+        isCodecSupported("video/hevc", 1920, 1080, p);
+    }
+
+    public VideoDecoderPropertiesModule(ReactApplicationContext reactContext) {
+        super(reactContext);
+        this.reactContext = reactContext;
+    }
+        @SuppressLint("ObsoleteSdkInt")
+    @ReactMethod
+    public void isCodecSupported(String mimeType, int width, int height, Promise p) {
+        if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.LOLLIPOP) {
+            p.resolve(false);
+            return;
+        }
+        MediaCodecList mRegularCodecs = new MediaCodecList(MediaCodecList.REGULAR_CODECS);
+        MediaFormat format = MediaFormat.createVideoFormat(mimeType, width, height);
+        String codecName = mRegularCodecs.findDecoderForFormat(format);
+        if (codecName == null) {
+            p.resolve(false);
+        } else {
+            p.resolve(true);
+        }
+    }
+
+
+    @ReactMethod
+    public void isHEVCSupported(Promise p) {
+        isCodecSupported("video/hevc", 1920, 1080, p);
+    }
+
+    public VideoDecoderPropertiesModule(ReactApplicationContext reactContext) {
+        super(reactContext);
+        this.reactContext = reactContext;
+    }
+        @SuppressLint("ObsoleteSdkInt")
+    @ReactMethod
+    public void isCodecSupported(String mimeType, int width, int height, Promise p) {
+        if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.LOLLIPOP) {
+            p.resolve(false);
+            return;
+        }
+        MediaCodecList mRegularCodecs = new MediaCodecList(MediaCodecList.REGULAR_CODECS);
+        MediaFormat format = MediaFormat.createVideoFormat(mimeType, width, height);
+        String codecName = mRegularCodecs.findDecoderForFormat(format);
+        if (codecName == null) {
+            p.resolve(false);
+        } else {
+            p.resolve(true);
+        }
+    }
+
+
+    @ReactMethod
+    public void isHEVCSupported(Promise p) {
+        isCodecSupported("video/hevc", 1920, 1080, p);
+    }
+
+    public VideoDecoderPropertiesModule(ReactApplicationContext reactContext) {
+        super(reactContext);
+        this.reactContext = reactContext;
+    }
+        @SuppressLint("ObsoleteSdkInt")
+    @ReactMethod
+    public void isCodecSupported(String mimeType, int width, int height, Promise p) {
+        if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.LOLLIPOP) {
+            p.resolve(false);
+            return;
+        }
+        MediaCodecList mRegularCodecs = new MediaCodecList(MediaCodecList.REGULAR_CODECS);
+        MediaFormat format = MediaFormat.createVideoFormat(mimeType, width, height);
+        String codecName = mRegularCodecs.findDecoderForFormat(format);
+        if (codecName == null) {
+            p.resolve(false);
+        } else {
+            p.resolve(true);
+        }
+    }
+
+
+    @ReactMethod
+    public void isHEVCSupported(Promise p) {
+        isCodecSupported("video/hevc", 1920, 1080, p);
+    }
+
+    public VideoDecoderPropertiesModule(ReactApplicationContext reactContext) {
+        super(reactContext);
+        this.reactContext = reactContext;
+    }
+    
 
 }
