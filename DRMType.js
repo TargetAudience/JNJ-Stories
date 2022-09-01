@@ -3,4 +3,5 @@ export default {
     PLAYREADY: 'playready',
     CLEARKEY: 'clearkey',
     FAIRPLAY: 'fairplay',
+    
 };
