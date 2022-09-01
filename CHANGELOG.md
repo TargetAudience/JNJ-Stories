@@ -12,6 +12,8 @@
 - Fix maxBitRate property being ignored on Android [#2670](https://github.com/react-native-video/react-native-video/pull/2670)
 - Fix crash when the source is a cameraroll [#2639] (https://github.com/react-native-video/react-native-video/pull/2639)
 
+
+
 ### Version 6.0.0-alpha.1
 
 - Remove Android MediaPlayer support [#2724](https://github.com/react-native-video/react-native-video/pull/2724)
